@@ -2,6 +2,14 @@
 
 東京大学の地盤研で使用されている、三軸試験機向けの計測・制御システム **DigitShow 系** の関連リポジトリをまとめたポータルリポジトリです。
 
+## そもそもDigitShowBasicとは
+Windows98時代に 東京大学 本郷地盤研 博士卒 の 中央開発株式会社 王 林(LIN Wang)さん が作成した DigitShow を参考に、  
+Windows2000時代に 東京大学 本郷地盤研 助手 本多 剛(HONDA Tsuyoshi)さんが作成したのが DigitShowBasic です。  
+当初はInterfaceとCONTECのISA/PCI/PCI ExpressのAD/DAボードをターゲットとしたアプリでしたが、
+USB接続の自作Modbusボードに最低限のAD/DAを搭載することで問題を解消しています。  
+時代とともにPCの小型化と拡張スロットがほぼGPU用途になり、Slot数が減少したため、  
+制御装置および計測装置の置き換えが困難になってきているのがこのシステムの問題です。  
+
 ## システム概要
 
 DigitShow 系システムは、センサー(ロードセル・変位計など)の値を AD/DA ボードで読み取り、Windows PC 上のソフトウェアで計測・記録・フィードバック制御を行うシステム群です。
@@ -13,7 +21,7 @@ DigitShow 系システムは、センサー(ロードセル・変位計など)�
  変位計 など     dsm_*_pcb / dsm_*_firmware              (計測・制御・記録)
 ```
 
-* **ハードウェア(PCB)** … KiCAD で設計した Modbus RTU AD/DA ボード(AI 16ch / AO 8ch)。バージョン世代ごとに v2 Quartet、v3 Yamanin、v4 Milia があります。
+* **ハードウェア(PCB)** … KiCAD で設計した Modbus RTU AD/DA ボード(AI 16ch / AO 8ch)。バージョン世代ごとに v1 Trio、v2 Quartet、v3 Yamanin、v4 Milia があります。
 * **ファームウェア** … 各ボード世代に対応する Modbus RTU スレーブファームウェア。
 * **ホストアプリ** … ボードと通信して計測・制御・データ保存を行う Windows アプリ(DigitShowModbus / DigitShowBasic 系)。
 * **周辺ツール・ドキュメント** … ドキュメント、遠隔監視 Web アセット、データ可視化用 fork ツールなど。
