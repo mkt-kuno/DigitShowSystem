@@ -33,10 +33,10 @@ DigitShow 系システムは、センサー(ロードセル・変位計など)�
 | リポジトリ | 対応 | 内容 | 公開範囲 |
 |---|---|---|---|
 | [dsm_quartet_firmware](https://github.com/mkt-kuno/dsm_quartet_firmware) | v1〜v2  | Trio / Quartet Modbus ボード 用ファームウェア | 非公開 |
-| [dsm_quartet_pcb](https://github.com/mkt-kuno/dsm_quartet_pcb) | v1〜v2 | Trio / QuartetModbus ボードの KiCAD PCB プロジェクト | 非公開 |
+| [dsm_quartet_pcb](https://github.com/mkt-kuno/dsm_quartet_pcb) | v1〜v2 | Trio / Quartet Modbus ボードの KiCAD PCB プロジェクト | 非公開 |
 | [dsm_milia_firmware](https://github.com/mkt-kuno/dsm_milia_firmware) | v3〜v4 | Yamanin / Milia Modbus ボード用ファームウェア | 非公開 |
-| [dsm_yamanin_pcb](https://github.com/mkt-kuno/dsm_yamanin_pcb) | v3 Yamanin | Modbus ボードの KiCAD PCB プロジェクト | 非公開 |
-| [dsm_milia_pcb](https://github.com/mkt-kuno/dsm_milia_pcb) | v4 Milia | Modbus ボードの KiCAD PCB プロジェクト | 非公開 |
+| [dsm_yamanin_pcb](https://github.com/mkt-kuno/dsm_yamanin_pcb) | v3 | Yamanin Modbus ボードの KiCAD PCB プロジェクト | 非公開 |
+| [dsm_milia_pcb](https://github.com/mkt-kuno/dsm_milia_pcb) | v4 | Milia Modbus ボードの KiCAD PCB プロジェクト | 非公開 |
 
 ### ホストアプリ
 
