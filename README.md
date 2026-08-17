@@ -50,7 +50,7 @@ DigitShow 系システムは、センサー(ロードセル・変位計など)�
 
 | リポジトリ | 内容 | 公開範囲・ライセンス |
 |---|---|---|
-| [DigitShowDoc](https://github.com/mkt-kuno/DigitShowDoc) | DigitShowModbus 用の Markdown 説明書ドキュメント | 公開・Copyright (c) KUWANO Laboratory(独自ライセンス) |
+| [DigitShowDoc](https://github.com/mkt-kuno/DigitShowDoc) | DigitShowModbus 用の Markdown 説明書ドキュメント | 公開 |
 | [DigitShowWebview](https://github.com/mkt-kuno/DigitShowWebview) | DigitShowModbus 用の研究室内ネット遠隔監視用 Web アセット | 公開・**LGPLv3** |
 | [DSMng](https://github.com/mkt-kuno/DSMng) | Windows VC++/MFC に代わる次世代アプリについての討論会場 | 公開 |
 | [ChartCtrl](https://github.com/mkt-kuno/ChartCtrl) | DigitShowModbus v4.4 以降で使用している MFC 用 Plot/Chart ライブラリ。CodeProject 由来で、元公開ページは消滅 | 公開・**CPOL** |
