@@ -5,7 +5,7 @@
 ## そもそもDigitShowBasicとは
 Windows98時代に 東京大学 本郷地盤研 博士卒 の 中央開発株式会社 王 林(LIN Wang)さん が作成した DigitShow を参考に、  
 Windows2000時代に 東京大学 本郷地盤研 助手 本多 剛(HONDA Tsuyoshi)さんが作成したのが DigitShowBasic です。  
-当初はInterfaceとCONTECのISA/PCI/PCI ExpressのAD/DAボードをターゲットとしたアプリでしたが、
+当初はInterfaceとCONTECのISA/PCI/PCI ExpressのAD/DAボードをターゲットとしたアプリでしたが、  
 USB接続の自作Modbusボードに最低限のAD/DAを搭載することで問題を解消しています。  
 時代とともにPCの小型化と拡張スロットがほぼGPU用途になり、Slot数が減少したため、  
 制御装置および計測装置の置き換えが困難になってきているのがこのシステムの問題です。  
