@@ -53,7 +53,7 @@ DigitShow 系システムは、センサー(ロードセル・変位計など)�
 | [DigitShowDoc](https://github.com/mkt-kuno/DigitShowDoc) | DigitShowModbus 用の Markdown 説明書ドキュメント | 公開・Copyright (c) KUWANO Laboratory(独自ライセンス) |
 | [DigitShowWebview](https://github.com/mkt-kuno/DigitShowWebview) | DigitShowModbus 用の研究室内ネット遠隔監視用 Web アセット | 公開 |
 | [DSMng](https://github.com/mkt-kuno/DSMng) | Windows VC++/MFC に代わる次世代アプリについての討論会場 | 公開 |
-| [ChartCtrl](https://github.com/mkt-kuno/ChartCtrl) | DigitShowModbus で使用している MFC 用 Plot/Chart ライブラリ。CodeProject 由来で、元公開ページは消滅 | 公開 |
+| [ChartCtrl](https://github.com/mkt-kuno/ChartCtrl) | DigitShowModbus v4.4 以降で使用している MFC 用 Plot/Chart ライブラリ。CodeProject 由来で、元公開ページは消滅 | 公開 |
 | [csvtk](https://github.com/mkt-kuno/csvtk) | ヒストリカルループの Plot を実現するための fork 版。DigitShowModbus v4.3 まで対応 | 公開・**MIT**(上流: shenwei356/csvtk) |
 | [ADS1115_WE](https://github.com/mkt-kuno/ADS1115_WE) | Read-Modify-Write 改善版。I2C バスの占有の少ない ADS1115 ライブラリの fork | 公開・**MIT**(上流: wollewald/ADS1115_WE) |
 
