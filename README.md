@@ -42,9 +42,10 @@ DigitShow 系システムは、センサー(ロードセル・変位計など)�
 
 | リポジトリ | 内容 | 状態 | 公開範囲・ライセンス |
 |---|---|---|---|
-| [DigitShowModbus](https://github.com/mkt-kuno/DigitShowModbus) | 高機能アプリ。Modbus ボード用の計測・制御アプリ(Windows VC++ MFC) | Latest | **非公開**・独自ライセンスのクローズドソース(UT-DSM License) |
+| [DigitShowModbus](https://github.com/mkt-kuno/DigitShowModbus) | 高機能アプリ。Modbus ボード用の計測・制御アプリ(Windows VC++ MFC) | Main | **非公開**・独自ライセンスのクローズドソース(UT-DSM License) |
 | [DigitShowBasic](https://github.com/mkt-kuno/DigitShowBasic) | Modbus ボードではなく CONTEC AD/DA ボード用の計測・制御アプリ(Windows VC++ MFC) | Legacy | 公開・**GPLv3** |
 | [DigitShowBasicM](https://github.com/mkt-kuno/DigitShowBasicM) | DigitShowBasic の AD/DA 部分だけを Modbus ボードに差し替えた計測・制御アプリ(Windows VC++ MFC) | Stable | 公開・**GPLv3** |
+| [DigitShowSide](https://github.com/mkt-kuno/DigitShowSide) | 試作アプリ。Modbus ボード対象 Qt PySide検証用アプリ、Modbusを置き換える取り組み (Windows Python Qt)| Develop |**非公開**・ライセンス未定|
 
 ### ドキュメント・周辺ツール
 
