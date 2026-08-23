@@ -77,4 +77,4 @@ DigitShow 系システムは、センサー(ロードセル・変位計など)�
 | [modbus_simple_firmware](https://github.com/KikuchiMakoto/modbus_simple_firmware) | Arduino Nano R4 用 AD/DA ボード firmware(HX711 / ADS1115 / GP8403 / ModbusRTUSlave) | 公開・**GPLv3** |
 | [modbus_simple_logger](https://github.com/KikuchiMakoto/modbus_simple_logger) | ブラウザ上で動作する Modbus RTU ロガー(SPA / PWA)。Web Serial API で接続し、リアルタイム計測・キャリブレーション・チャート表示・TSV 保存が可能 | 公開・**MIT** |
 
-次世代アプリの方向性については [DSMng](https://github.com/mkt-kuno/DSMng) でも議論しており、趣味版の TypeScript 製ロガー([modbus_simple_logger](https://github.com/KikuchiMakoto/modbus_simple_logger))を第一の柱と捉えています。
+次世代アプリの方向性については [DSMng](https://github.com/mkt-kuno/DigitShowSystem/issues/3) でも議論しており、趣味版の TypeScript 製ロガー([modbus_simple_logger](https://github.com/KikuchiMakoto/modbus_simple_logger))を第一の柱と捉えています。
