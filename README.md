@@ -78,3 +78,7 @@ DigitShow 系システムは、センサー(ロードセル・変位計など)�
 | [modbus_simple_logger](https://github.com/KikuchiMakoto/modbus_simple_logger) | ブラウザ上で動作する Modbus RTU ロガー(SPA / PWA)。Web Serial API で接続し、リアルタイム計測・キャリブレーション・チャート表示・TSV 保存が可能 | 公開・**MIT** |
 
 次世代アプリの方向性については [次世代アプリの Issue](https://github.com/mkt-kuno/DigitShowSystem/issues/3) で議論しており、趣味版の TypeScript 製ロガー([modbus_simple_logger](https://github.com/KikuchiMakoto/modbus_simple_logger))を第一の柱と捉えています。
+
+## コラム: センサーの知見
+
+生研式三軸試験機に搭載されるセンサー(ロードセル・変位計・差圧発信器・電空レギュレータ等)について、**方式と信号インターフェースの単位で**整理した技術メモを **[SENSORS.md](./SENSORS.md)** にまとめています。型番は載せずに「原理 × 出力形式 × 受け方」で記述しているので、製造中止・代替調達に左右されない知識として使えます。保守・改造・新規構築時の一次資料です。
