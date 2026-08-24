@@ -36,6 +36,8 @@ DigitShow 系システムは、センサー(ロードセル・変位計など)�
 
 ### ハードウェア・ファームウェア(非公開)
 
+PCB 設計・ファームウェアは電気電子系の専門知識(アナログ回路、KiCAD、組込み)が要求される領域で、公開しても第三者が保守できる形にはなりにくいうえ、「動かないのですが」という問い合わせ対応のコストだけが跳ね上がります。そのため非公開運用としています。**公開版の PCB データが必要な場合は、後述の趣味版 [modbus_simple_pcb](https://github.com/KikuchiMakoto/modbus_simple_pcb) を利用してください**(部品実装不要のガーバー発注まで可能)。
+
 | リポジトリ | 対応 | 内容 | 公開範囲 |
 |---|---|---|---|
 | [dsm_quartet_firmware](https://github.com/mkt-kuno/dsm_quartet_firmware) | v1〜v2  | Trio / Quartet Modbus ボード 用ファームウェア | 非公開 |
