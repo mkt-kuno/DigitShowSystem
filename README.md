@@ -3,12 +3,10 @@
 東京大学の地盤研で使用されている、三軸試験機向けの計測・制御システム **DigitShow 系** の関連リポジトリをまとめたポータルリポジトリです。
 
 ## そもそもDigitShowBasicとは
-Windows98時代に 東京大学 本郷地盤研 博士卒 の 中央開発株式会社 王 林(LIN Wang)さん が作成した DigitShow を参考に、  
-Windows2000時代に 東京大学 本郷地盤研 助手 本多 剛(HONDA Tsuyoshi)さんが作成したのが DigitShowBasic です。  
-当初はInterfaceとCONTECのISA/PCI/PCI ExpressのAD/DAボードをターゲットとしたアプリでしたが、  
-USB接続の自作Modbusボードに最低限のAD/DAを搭載することで問題を解消しています。  
-時代とともにPCの小型化と拡張スロットがほぼGPU用途になり、Slot数が減少したため、  
-制御装置および計測装置の置き換えが困難になってきているのがこのシステムの問題です。  
+
+三軸試験機向け計測・制御ソフトの歴史は、Windows98 時代に東京大学 本郷地盤研 博士卒の王 林(LIN Wang)氏(中央開発株式会社)が作った **DigitShow** に始まります。それを参考に、Windows2000 時代に同じく本郷地盤研助手の本多 剛(HONDA Tsuyoshi)氏が作ったのが **DigitShowBasic** です。
+
+当初は Interface / CONTEC の ISA / PCI / PCI Express AD/DA ボードをターゲットとしたアプリでしたが、USB 接続の自作 Modbus ボードに最低限の AD/DA を搭載することで問題を解消しています。PC の小型化とともに拡張スロットが GPU 用途に取って代わられスロット数が減り、制御装置・計測装置の置き換えが困難になっている——これがこのシステムが向き合う問題です。
 
 ## システム概要
 
@@ -21,12 +19,12 @@ DigitShow 系システムは、センサー(ロードセル・変位計など)�
  変位計 など     dsm_*_pcb / dsm_*_firmware              (計測・制御・記録)
 ```
 
-* **ハードウェア(PCB)** … KiCAD で設計した Modbus RTU AD/DA ボード(AI 16ch / AO 8ch)。バージョン世代ごとに v1 Trio、v2 Quartet、v3 Yamanin、v4 Milia があります。
-* **ファームウェア** … 各ボード世代に対応する Modbus RTU スレーブファームウェア。
-* **ホストアプリ** … ボードと通信して計測・制御・データ保存を行う Windows アプリ(DigitShowModbus / DigitShowBasic 系)。
-* **周辺ツール・ドキュメント** … ドキュメント、遠隔監視 Web アセット、データ可視化用 fork ツールなど。
+- **ハードウェア(PCB)** … KiCAD で設計した Modbus RTU AD/DA ボード(AI 16ch / AO 8ch)。バージョン世代ごとに v1 Trio、v2 Quartet、v3 Yamanin、v4 Milia があります。
+- **ファームウェア** … 各ボード世代に対応する Modbus RTU スレーブファームウェア。
+- **ホストアプリ** … ボードと通信して計測・制御・データ保存を行う Windows アプリ(DigitShowModbus / DigitShowBasic 系)。
+- **周辺ツール・ドキュメント** … ドキュメント、遠隔監視 Web アセット、データ可視化用 fork ツールなど。
 
-### センサーの知見
+### 📖 センサーの知見
 
 このシステムが接続するセンサー(ロードセル・変位計・差圧発信器・電空レギュレータ等)については、**方式と信号インターフェースの単位で**整理した技術メモを **[KNOWLEDGE.md](./KNOWLEDGE.md)** にまとめています。型番は載せずに「原理 × 出力形式 × 受け方」で記述しているので、製造中止・代替調達に左右されない知識として使えます。保守・改造・新規構築時の一次資料です。
 
@@ -81,11 +79,11 @@ PCB 設計・ファームウェアは電気電子系の専門知識(アナログ
 | リポジトリ | 内容 | ライセンス |
 |---|---|---|
 | [modbus_simple_system](https://github.com/KikuchiMakoto/modbus_simple_system) | **トップページ**。システム全体の説明・ドキュメントはこちら(README を読めば分かります) | 各リポジトリのライセンスに従う |
-| [modbus_simple_pcb](https://github.com/KikuchiMakoto/modbus_simple_pcb) | 計測基板の KiCAD データ・ガーバー。**DigitShow 系で公開されている唯一の PCB データ**。ガーバーを基板工場に送るだけで発注でき、部品実装(JLCPCB SMT 等)も不要 — 自分で計測ボードを作りたい場合の出発点 | 公開 |
+| [modbus_simple_pcb](https://github.com/KikuchiMakoto/modbus_simple_pcb) | 計測基板の KiCAD データ・ガーバー。**DigitShow 系で公開されている唯一の PCB データ**。ガーバーを送るだけで発注でき、部品実装も不要 — 基板から自作する場合の出発点 | 公開 |
 | [modbus_simple_firmware](https://github.com/KikuchiMakoto/modbus_simple_firmware) | Arduino Nano R4 用 AD/DA ボード firmware(HX711 / ADS1115 / GP8403 / ModbusRTUSlave) | 公開・**GPLv3** |
 | [modbus_simple_logger](https://github.com/KikuchiMakoto/modbus_simple_logger) | ブラウザ上で動作する Modbus RTU ロガー(SPA / PWA)。Web Serial API で接続し、リアルタイム計測・キャリブレーション・チャート表示・TSV 保存が可能 | 公開・**MIT** |
 
-> 💡 職務版(dsm_*_pcb)は非公開のため、**PCB データが手に入るのはこの趣味版だけです。** 「既製品を買って使う」ではなく「基板から自作する」場合の事実上の選択肢になります。
+> 💡 職務版(dsm_*_pcb)は非公開のため、**PCB データが手に入るのはこの趣味版だけです。**
 
 次世代アプリの方向性については [次世代アプリの Issue](https://github.com/mkt-kuno/DigitShowSystem/issues/3) で議論しており、趣味版の TypeScript 製ロガー([modbus_simple_logger](https://github.com/KikuchiMakoto/modbus_simple_logger))を第一の柱と捉えています。
 
