@@ -52,7 +52,8 @@ PCB 設計・ファームウェアは電気電子系の専門知識(アナログ
 | [DigitShowBasic](https://github.com/mkt-kuno/DigitShowBasic) | Modbus ボードではなく CONTEC AD/DA ボード用の計測・制御アプリ(Windows VC++ MFC) | Legacy | 公開・**GPLv3** |
 | [DigitShowBasicTS](https://github.com/mkt-kuno/DigitShowBasicTS) | Modbus ボードではなく CONTEC AD/DA ボード用の計測・制御アプリ、中空ねじり用(Windows VC++ MFC) | Legacy | 非公開・**GPLv3**(予定) |
 | [DigitShowBasicM](https://github.com/mkt-kuno/DigitShowBasicM) | DigitShowBasic の AD/DA 部分だけを Modbus ボードに差し替えた計測・制御アプリ(Windows VC++ MFC) | Stable | 公開・**GPLv3** |
-| [DigitShowSide](https://github.com/mkt-kuno/DigitShowSide) | 試作アプリ。Modbus ボード対象 Qt PySide検証用アプリ (Windows Python Qt)| Develop |**非公開**・ライセンス未定|
+| [DigitShowQt](https://github.com/mkt-kuno/DigitShowSide) | 試作アプリ。Modbus ボード対象 Qt 検証用アプリ (Windows/Linux C++ Qt)| Develop |**非公開**・独自ライセンス(UT-DSM License)|
+| [DigitShowSide](https://github.com/mkt-kuno/DigitShowSide) | 試作アプリ。Modbus ボード対象 Qt PySide検証用アプリ (Windows Python Qt)| Develop |**非公開**・独自ライセンス(UT-DSM License)|
 
 ### ドキュメント・周辺ツール
 
