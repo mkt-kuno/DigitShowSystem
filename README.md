@@ -47,7 +47,7 @@ PCB 設計・ファームウェアは電気電子系の専門知識(アナログ
 ### ホストアプリ
 
 | リポジトリ | 対象 | 内容 | 状態 | 公開範囲・ライセンス |
-|---|---|---|---|
+|---|---|---|---|---|
 | [DigitShowModbus](https://github.com/mkt-kuno/DigitShowModbus) | Modbusボード | 高機能、3軸用計測・制御アプリ(Windows VC++ MFC) | Main | **非公開**・独自ライセンス(UT-DSM License) |
 | [DigitShowBasic](https://github.com/mkt-kuno/DigitShowBasic) | CONTEC AD/DA | 3軸向け用計測・制御アプリ(Windows VC++ MFC) | Legacy | 公開・**GPLv3** |
 | [DigitShowBasicTS](https://github.com/mkt-kuno/DigitShowBasicTS) | CONTEC AD/DA | 中空ねじり用計測・制御アプリ(Windows VC++ MFC) | Legacy | 非公開・**GPLv3**(予定) |
