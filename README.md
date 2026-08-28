@@ -52,7 +52,7 @@ PCB 設計・ファームウェアは電気電子系の専門知識(アナログ
 | [DigitShowBasic](https://github.com/mkt-kuno/DigitShowBasic) | CONTEC AD/DA | 3軸向け用計測・制御アプリ(Windows VC++ MFC) | Legacy | 公開・**GPLv3** |
 | [DigitShowBasicTS](https://github.com/mkt-kuno/DigitShowBasicTS) | CONTEC AD/DA | 中空ねじり用計測・制御アプリ(Windows VC++ MFC) | Legacy | 非公開・**GPLv3**(予定) |
 | [DigitShowBasicM](https://github.com/mkt-kuno/DigitShowBasicM) | Modbusボード | DigitShowBasicのModbus ボード版(Windows VC++ MFC) | Stable | 公開・**GPLv3** |
-| [DigitShowSide](https://github.com/mkt-kuno/DigitShowSide) | Modbusボード | AI協業 DigitShowのクリーンルーム再実装版 (Python QtSide)| Unstable | 公開（予定）・**GPLv3**|
+| [DigitShowSide](https://github.com/mkt-kuno/DigitShowSide) | Modbusボード | 生成AIによるPython再実装版 (Python QtSide)| Unstable | 公開・**GPLv3**|
 
 ### ドキュメント・周辺ツール
 
