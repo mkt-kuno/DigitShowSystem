@@ -23,9 +23,9 @@ Windows PC 上のソフトウェアで計測・記録・フィードバック制
 Qt6製の多機能アプリ **DigitShowModbus** の組み合わせです。
 
 ```
-[センサー] ──▶ [Modbus RTU AD/DAボード] ──USB/RS-485──▶ [Windows PC]
- ロードセル      (PCB + ファームウェア)                  DigitShowModbus
- 変位計 など     dsm_*_pcb / dsm_*_firmware              (計測・制御・記録)
+[センサー] ──▶ [Modbus RTU AD/DAボード] ──USB──▶ [Windows PC]
+ ロードセル      (PCB + ファームウェア)          DigitShowModbus
+ 変位計 など     dsm_*_pcb / dsm_*_firmware     (計測・制御・記録)
 ```
 
 - **ハードウェア(PCB)** … KiCAD で設計した Modbus RTU AD/DA ボード(AI 16ch / AO 8ch)
