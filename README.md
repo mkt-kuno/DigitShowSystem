@@ -3,12 +3,12 @@
 東京大学の地盤研で使用されている、三軸試験機向けの計測・制御システム   
 **DigitShow 系** の関連リポジトリをまとめたポータルリポジトリです。
 
-## そもそもDigitShowBasicとは
+## DigitShowBasicとは
 
 三軸試験機向け計測・制御ソフトの歴史は、  
 Windows98 時代に東京大学 本郷地盤研 博士卒の王 林(Lin WANG)氏(中央開発株式会社)が作った **DigitShow** に始まります。  
-それを参考に、Windows2000 時代に同じく本郷地盤研助手の本多 剛(Tsuyoshi HONDA)氏が作ったのが **DigitShowBasic** です。  
-それを参考に、Windows11 時代に東京大学　生産技術研究所 一般技術職員の久野 洵(Makoto KUNO)が作ったのが **DigitShowModbus** です。
+それを参考に、Windows2000 時代に 東京大学 本郷 地盤研 助手 本多 剛(Tsuyoshi HONDA)氏が作ったのが **DigitShowBasic** です。  
+それを参考に、Windows11 時代に東京大学生産技術研究所 一般技術職員の久野 洵(Makoto KUNO)が作ったのが **DigitShowModbus** です。
 
 当初は Interface / CONTEC の ISA / PCI / PCI Express AD/DA ボードをターゲットとしたアプリでしたが、  
 PC の小型化とともに拡張スロット数がなくなり、制御装置・計測装置の置き換えが困難になっています。  
@@ -19,8 +19,8 @@ PC の小型化とともに拡張スロット数がなくなり、制御装置�
 
 DigitShow 系システムは、センサー(ロードセル・変位計など)の値を AD/DA ボードで読み取り、  
 Windows PC 上のソフトウェアで計測・記録・フィードバック制御を行うシステム群です。  
-現在の主力は、独自開発の **Modbus RTU ボード** と、
-Qt6製の高機能アプリ **DigitShowModbus** の組み合わせです。
+現在の主力は、独自開発の **Modbus RTU AD/DAボード** と、
+Qt6製の多機能アプリ **DigitShowModbus** の組み合わせです。
 
 ```
 [センサー] ──▶ [Modbus RTU AD/DAボード] ──USB/RS-485──▶ [Windows PC]
@@ -37,11 +37,14 @@ Qt6製の高機能アプリ **DigitShowModbus** の組み合わせです。
 
 このシステムが接続するセンサー(ロードセル・変位計・差圧発信器・電空レギュレータ等)については、  
 **方式と信号インターフェースの単位で**整理した技術メモを **[KNOWLEDGE.md](./KNOWLEDGE.md)** にまとめています。  
-型番は載せずに「原理 × 出力形式 × 受け方」で記述しているので、製造中止・代替調達に左右されない知識として使えます。  
-保守・改造・新規構築時の一次資料です。ですが、多くの場合、写真を撮ってChatGPT/Claudeに聞いた方が早いです。
+型番は載せずに「原理 × 出力形式 × 受け方」で記述しているので、  
+製造中止・代替調達に左右されない知識として使えます。  
+保守・改造・新規構築時の一次資料です。  
+ですが、**多くの場合、写真を撮ってChatGPT/Claudeに聞いた方が早いです。**  
 
 信号の受け方(HX711 / ADS1115 / シールドとアース / DC-AC 励起 / 校正)をより深く掘り下げた解説は、  
-後述の趣味版 modbus_simple_system の `docs/` にあります。電気的な原則は共通ですが、趣味版は個人リポジトリであり無保証です。
+後述の趣味版 modbus_simple_system の `docs/` にあります。  
+電気的な原則は共通ですが、趣味版は個人リポジトリであり無保証です。
 
 ## リポジトリ一覧(職務版: mkt-kuno)
 
@@ -49,7 +52,7 @@ Qt6製の高機能アプリ **DigitShowModbus** の組み合わせです。
 
 PCB 設計・ファームウェアは電気電子系の専門知識(アナログ回路、KiCAD、組込み)が要求される領域で、  
 公開しても第三者が保守できる形にはなりにくいうえ、  
-「動かないのですが」という問い合わせ対応のコストだけが跳ね上がるため非公開運用としています。  
+「動かない」「どうやって作れば良い」等の問い合わせが避けられないため、非公開運用としています。  
 **基板作成時は、互換性のある趣味版 [modbus_simple_pcb](https://github.com/KikuchiMakoto/modbus_simple_pcb) を利用してください。**。
 
 | リポジトリ | 対応 | 内容 | 公開範囲 |
@@ -64,7 +67,7 @@ PCB 設計・ファームウェアは電気電子系の専門知識(アナログ
 
 | リポジトリ | 対象 | 内容 | 状態 | 公開範囲・ライセンス |
 |---|---|---|---|---|
-| [DigitShowModbus](https://github.com/mkt-kuno/DigitShowModbus) | Modbusボード | 高機能、3軸用計測・制御アプリ(Qt6 LTS) | Main | **非公開**・独自ライセンス |
+| [DigitShowModbus](https://github.com/mkt-kuno/DigitShowModbus) | Modbusボード | 多機能、3軸用計測・制御アプリ(Qt6 LTS) | Main | **非公開**・独自ライセンス |
 | [DigitShowSide](https://github.com/mkt-kuno/DigitShowSide) | Modbusボード | 生成AIによるPython再実装版 (Python QtSide)| Develop | 公開・**GPLv3**|
 | [DigitShowBasicM](https://github.com/mkt-kuno/DigitShowBasicM) | Modbusボード | DigitShowBasicのModbus ボード版(Windows VC++ MFC) | Stable | 公開・**GPLv3** |
 | [DigitShowBasic](https://github.com/mkt-kuno/DigitShowBasic) | CONTEC AD/DA | 3軸向け用計測・制御アプリ(Windows VC++ MFC) | Legacy | 公開・**GPLv3** |
@@ -76,9 +79,9 @@ PCB 設計・ファームウェアは電気電子系の専門知識(アナログ
 |---|---|---|
 | [DigitShowDoc](https://github.com/mkt-kuno/DigitShowDoc) | DigitShowModbus 用の Markdown 説明書 | 公開 |
 | [DigitShowWebview](https://github.com/mkt-kuno/DigitShowWebview) | DigitShowModbus 遠隔監視用アプリ | 公開・**MIT** |
-| [ChartCtrl](https://github.com/mkt-kuno/ChartCtrl) | DigitShowModbus v4.4.0～v5.0.7 で使用 MFC用高速Chartライブラリ。CodeProject 由来、元公開ページ消滅 | 公開・**CPOL** |
-| [csvtk](https://github.com/mkt-kuno/csvtk) | ヒストリカルループ対応 fork 版。DigitShowModbus v1.1.0～4.3 対応 | 公開・**MIT** |
-| [ADS1115_WE](https://github.com/mkt-kuno/ADS1115_WE) | Read-Modify-Write 改善fork版 | 公開・**MIT** |
+| [ChartCtrl](https://github.com/mkt-kuno/ChartCtrl) | DigitShowModbus v4.4.0～v5.0.7 で使用、 MFC用高速ChartライブラリCodeProject 由来、元公開ページ消滅 | 公開・**CPOL** |
+| [csvtk](https://github.com/mkt-kuno/csvtk) | 履歴曲線対応 fork 版。DigitShowModbus v1.1.0～4.3 対応 | 公開・**MIT** |
+| [ADS1115_WE](https://github.com/mkt-kuno/ADS1115_WE) | firmwareで利用、Read-Modify-Write 改善fork版 | 公開・**MIT** |
 
 ## コラム: 趣味版(modbus_simple シリーズ)
 
@@ -86,13 +89,6 @@ PCB 設計・ファームウェアは電気電子系の専門知識(アナログ
 基本的に全てMITなどのフリーなライセンスで公開中です。が、あくまで**趣味版なので責任は負いませんし、質問にも答えません**。  
 Modbusボードの通信仕様は同じにしてありますので、アプリやボードは互いに互換性があります。  
 こちらのアプリは、ブラウザだけで計測・制御できます(Chrome / Edgeのみ)。
-
-```
-[センサー] ──▶ [計測基板] ──▶ [Arduino Nano R4] ──USB──▶ [ブラウザ]
- ロードセル      HX711 ×8        Modbus RTU スレーブ        グラフ・保存
- 変位計          ADS1115 ×2                                 Python 制御
-                 GP8403 ×4
-```
 
 | リポジトリ | 内容 | ライセンス |
 |---|---|---|
