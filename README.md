@@ -50,7 +50,7 @@ Qt6製の高機能アプリ **DigitShowModbus** の組み合わせです。
 PCB 設計・ファームウェアは電気電子系の専門知識(アナログ回路、KiCAD、組込み)が要求される領域で、  
 公開しても第三者が保守できる形にはなりにくいうえ、  
 「動かないのですが」という問い合わせ対応のコストだけが跳ね上がるため非公開運用としています。  
-**基板作成時は、互換性のある趣味版 [modbus_simple_pcb](https://github.com/KikuchiMakoto/modbus_simple_pcb) を利用してください**。
+**基板作成時は、互換性のある趣味版 [modbus_simple_pcb](https://github.com/KikuchiMakoto/modbus_simple_pcb) を利用してください。**。
 
 | リポジトリ | 対応 | 内容 | 公開範囲 |
 |---|---|---|---|
