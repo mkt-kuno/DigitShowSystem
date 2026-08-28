@@ -65,10 +65,10 @@ PCB 設計・ファームウェアは電気電子系の専門知識(アナログ
 
 ### ホストアプリ
 
-| リポジトリ | 対象 | 内容 | 状態 | 公開範囲・ライセンス |
+| リポジトリ | 対象 | 内容 | 扱い | 公開範囲・ライセンス |
 |---|---|---|---|---|
-| [DigitShowModbus](https://github.com/mkt-kuno/DigitShowModbus) | Modbusボード | 多機能、3軸用計測・制御アプリ(Qt6 LTS) | Main | **非公開**・独自ライセンス |
-| [DigitShowSide](https://github.com/mkt-kuno/DigitShowSide) | Modbusボード | 生成AIによるPython再実装版 (Python QtSide)| Develop | 公開・**GPLv3**|
+| [DigitShowModbus](https://github.com/mkt-kuno/DigitShowModbus) | Modbusボード | 多機能、3軸用計測・制御アプリ(Qt6 LTS) | Main/Develop | **非公開**・独自ライセンス |
+| [DigitShowSide](https://github.com/mkt-kuno/DigitShowSide) | Modbusボード | 生成AIによるPython再実装版 (Python QtSide)| Experiment | 公開・**GPLv3**|
 | [DigitShowBasicM](https://github.com/mkt-kuno/DigitShowBasicM) | Modbusボード | DigitShowBasicのModbus ボード版(Windows VC++ MFC) | Stable | 公開・**GPLv3** |
 | [DigitShowBasic](https://github.com/mkt-kuno/DigitShowBasic) | CONTEC AD/DA | 3軸向け用計測・制御アプリ(Windows VC++ MFC) | Legacy | 公開・**GPLv3** |
 | [DigitShowBasicTS](https://github.com/mkt-kuno/DigitShowBasicTS) | CONTEC AD/DA | 中空ねじり用計測・制御アプリ(Windows VC++ MFC) | Legacy | 公開・**GPLv3** |
